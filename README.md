@@ -304,3 +304,53 @@ qb-core/shared/jobs.lua
 		    },
 		},
 		},
+
+dpemotes/client/Animations.lua
+
+	   ["cozinheiro"] = {"anim@amb@clubhouse@tutorial@bkr_tut_ig3@", "machinic_loop_mechandplayer", "Cozinheiro", AnimationOptions =
+	   {
+	       Prop = "prop_knife",
+	       PropBone = 18905,
+	       PropPlacement = {0.13, 0.15, 0.0, -10.0, 0.0, -20.0},
+	       EmoteLoop = true,
+	       EmoteMoving = true,
+	   }},
+You dont need to add this one, just if you want 
+
+	   ["2tabuleiros"] = { "anim@heists@box_carry@", "idle", "Food Tray F", AnimationOptions = {
+	    Prop = "prop_food_bs_tray_02",
+	    PropBone = 57005,
+	    PropPlacement = { 0.2500, 0.1000, 0.0700, -110.5483936, 73.3529273, -16.338362 },
+	    SecondProp = 'prop_food_bs_tray_03',
+	    SecondPropBone = 18905,
+	    SecondPropPlacement = { 0.2200, 0.1300, -0.1000, -127.7725487, 110.2074758, -3.5886263 },
+	    EmoteLoop = true,
+	    EmoteMoving = true,
+	    } },
+	    
+If you have the same map as me, use this props
+<br>
+Go in qb-props/config.lua and add this
+
+	Config.Props = {
+	    [1] = {
+	    model = "prop_fib_clipboard",
+	    coords = vector4(-1195.61, -901.31, 15.61, 125),
+	    },
+	    [2] = {
+		model = "prop_food_bs_tray_01",
+		coords = vector4(-1194.58, -893.64, 15.1, 124.2),
+	    },
+	    [3] = {
+		model = "prop_food_bs_tray_01",
+		coords = vector4(-1193.4, -895.38, 15.1, 124.2),
+	    },
+	    [4] = {
+	    model = "prop_food_bs_tray_01",
+	    coords = vector4(-1192.41, -896.85, 15.1, 124.2),
+	    },
+	    [5] = {
+	    model = "prop_off_phone_01",
+	    coords = vector4(-1196.62, -902.14, 14.9, 214.2),
+	    }
+	}
